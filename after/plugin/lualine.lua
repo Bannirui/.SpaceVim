@@ -6,7 +6,8 @@ end
 lualine.setup {
   options = {
     icons_enabled = true,
-    theme = "auto",
+    -- theme = "auto",
+    theme = "gruvbox",
     component_separators = {left = "", right = ""},
     section_separators = {left = "", right = ""},
     disabled_filetypes = {},
@@ -21,7 +22,8 @@ lualine.setup {
     },
     lualine_c = {"filename"},
     lualine_x = {
-      {"diagnostics", sources = {"nvim_lsp"}, symbols = {error = " ", warn = " ", info = " ", hint = " "}},
+      -- {"diagnostics", sources = {"nvim_lsp"}, symbols = {error = " ", warn = " ", info = " ", hint = " "}},
+      {"diagnostics", sources = {"nvim_lsp"}, symbols = {error = "E", warn = "W", info = "I", hint = "H"}},
       "encoding",
       "fileformat",
       "filetype"

@@ -28,7 +28,7 @@ return require('packer').startup({
 			}
 		}
 		-- LSP客户端
-		use { "neovim/nvim-lspconfig" }
+		use { "neovim/nvim-lspconfig", "williamboman/nvim-lsp-installer" }
 		use {
 			"hrsh7th/nvim-cmp",
 			requires = {
@@ -104,7 +104,7 @@ return require('packer').startup({
  		use "davidhalter/jedi-vim"
 		-- 展示函数变量名
 		use "simrat39/symbols-outline.nvim"
-		-- 代码 repl 插件
+		-- 代码repl插件
   		use "tpope/vim-repeat"
   		use "pappasam/nvim-repl"
 		-- 终端调用插件
