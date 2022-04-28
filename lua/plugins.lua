@@ -121,6 +121,8 @@ return require('packer').startup({
 		use "honza/vim-snippets"
 		-- markdwon预览插件
 		use "suan/vim-instant-markdown"
+		-- 主题
+		use { 'morhetz/gruvbox' }
 
 	end,
 	config = {

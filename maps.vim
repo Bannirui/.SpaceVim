@@ -6,12 +6,7 @@
 nmap ss :split<Return><C-w>w
 " 垂直分屏
 nmap sv :vsplit<Return><C-w>w
-" Move window
-"nmap <Space> <C-w>w
-"map s<left> <C-w>h
-"map s<up> <C-w>k
-"map s<down> <C-w>j
-"map s<right> <C-w>l
+"
 " 分屏窗口间移动 sh=左移
 map sh <C-w>h
 " 分屏窗口间移动 sk=下移
@@ -30,10 +25,10 @@ nmap <M-down> <C-w>-
 " jk=esc
 inoremap jk <Esc>
 
-" ctrl+s=保 存
+" ctrl+s=保存
 noremap <C-s> :w<CR>
 
-" 代码格式化
+" 空格+f=代码格式化
 noremap <leader>f :Format<CR> 
 noremap <leader>r :luafile ~/.wp/lua/run.lua<CR>
 

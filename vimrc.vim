@@ -60,6 +60,11 @@ endfunction
 
 :command NewColor call RandomColorScheme()
 
+" 主题
+set bg=dark
+colorscheme gruvbox
+set guioptions=
+set guifont=Monaco:h24
 
 " 文件类型设置 "{{{
 " ---------------------------------------------------------------------
